@@ -7,6 +7,7 @@ License:	GPL
 Vendor:		Brendon Humphrey <brendy@swipnet.se>
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/KDE1.x/utils/%{name}-%{version}.tar.gz
+# Source0-md5:	50dc0236d7efb166d831f6f713ee23d0
 Patch0:		%{name}-%{version}.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
