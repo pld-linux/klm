@@ -3,17 +3,22 @@ Name:		klm
 Version:	0.5.0
 Release:	2
 Group:		X11/KDE/Applications
-Copyright:	GPL
+Group(de):	X11/KDE/Applikationen
+Group(pl):	X11/KDE/Aplikacje
+License:	GPL
 Vendor:		Brendon Humphrey <brendy@swipnet.se>
-Source:		%{name}-%{version}.tar.bz2
-Patch:		%{name}-%{version}.patch
+Source0:	%{name}-%{version}.tar.bz2
+Patch0:		%{name}-%{version}.patch
 URL:		http://www.wantree.com.au/~brendy/sofware.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
+
 %description
 Klm is a KDE application that can be used to display and configure the
-hardware health monitoring sensors that are present in most modern PCs. Klm
-uses the lm_sensors kernel module to access these sensors.
+hardware health monitoring sensors that are present in most modern
+PCs. Klm uses the lm_sensors kernel module to access these sensors.
 
 %prep
 %setup -q
@@ -21,9 +26,9 @@ uses the lm_sensors kernel module to access these sensors.
 
 %build
 if [ -z "$KDEDIR" ]; then
-	export KDEDIR=%{prefix}
+	KDEDIR=%{_prefix} ; export KDEDIR
 fi
-CXXFLAGS="$RPM_OPT_FLAGS" CFLAGS="$RPM_OPT_FLAGS" ./configure \
+CXXFLAGS="%{rpmcflags}" CFLAGS="%{rpmcflags}" ./configure \
 	--prefix=$KDEDIR --with-install-root=$RPM_BUILD_ROOT
 %{__make}
 
@@ -39,3 +44,4 @@ find . -type l | sed 's,^\.,\%attr(-\,root\,root) ,' >> $RPM_BUILD_DIR/file.list
 rm -rf $RPM_BUILD_ROOT
 
 %files -f ../file.list.%{name}
+%defattr(644,root,root,755)
