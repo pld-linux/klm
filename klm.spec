@@ -8,7 +8,7 @@ Vendor:		Brendon Humphrey <brendy@swipnet.se>
 Source:		%{name}-%{version}.tar.bz2
 Patch:		%{name}-%{version}.patch
 URL:		http://www.wantree.com.au/~brendy/sofware.html
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Klm is a KDE application that can be used to display and configure the
