@@ -6,11 +6,6 @@ Release:	2
 License:	GPL
 Vendor:		Brendon Humphrey <brendy@swipnet.se>
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(es):	X11/Aplicaciones
-Group(pl):	X11/Aplikacje
-Group(pt_BR):	X11/Aplicações
-Group(pt):	X11/Aplicações
 Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/utils/%{name}-%{version}.tar.gz
 Patch0:		%{name}-%{version}.patch
 URL:		http://www.wantree.com.au/~brendy/sofware.html
