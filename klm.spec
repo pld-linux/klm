@@ -7,7 +7,7 @@ Group(de):	X11/KDE/Applikationen
 Group(pl):	X11/KDE/Aplikacje
 License:	GPL
 Vendor:		Brendon Humphrey <brendy@swipnet.se>
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/utils/%{name}-%{version}.tar.gz
 Patch0:		%{name}-%{version}.patch
 URL:		http://www.wantree.com.au/~brendy/sofware.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
