@@ -10,8 +10,6 @@ Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/KDE1.x/utils/%{name}-%{version}
 Patch0:		%{name}-%{version}.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 Klm is a KDE application that can be used to display and configure the
