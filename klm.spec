@@ -39,11 +39,3 @@ find . -type l | sed 's,^\.,\%attr(-\,root\,root) ,' >> $RPM_BUILD_DIR/file.list
 rm -rf $RPM_BUILD_ROOT
 
 %files -f ../file.list.%{name}
-
-%changelog                                               
-* Fri Jun 04 1999 Troy Engel <tengel@sonic.net>
-  - Updated SPEC a whole bunch
-* Sat Feb 13 1999 Brendon Humphrey <brendy@swipnet.se>
-  - Updated for klm 0.5.0.
-* Thu Jan 21 1999 Bert de Bruijn <bob@ccl.kuleuven.ac.be>
-  - first version of the SPEC file. Klm version 0.4.0.
