@@ -2,7 +2,7 @@ Summary:	KLM - KDE app to monitor system health sensors
 Name:		klm
 Version:	0.5.0
 Release:	2
-Group:		X11/KDE/Apps
+Group:		X11/KDE/Applications
 Copyright:	GPL
 Vendor:		Brendon Humphrey <brendy@swipnet.se>
 Source:		%{name}-%{version}.tar.bz2
