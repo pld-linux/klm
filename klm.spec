@@ -6,9 +6,8 @@ Release:	2
 License:	GPL
 Vendor:		Brendon Humphrey <brendy@swipnet.se>
 Group:		X11/Applications
-Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/utils/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/KDE1.x/utils/%{name}-%{version}.tar.gz
 Patch0:		%{name}-%{version}.patch
-URL:		http://www.wantree.com.au/~brendy/sofware.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
