@@ -1,12 +1,16 @@
 Summary:	KLM - KDE app to monitor system health sensors
+Summary(pl):	KLM - aplikacja KDE do monitorowania sensorów
 Name:		klm
 Version:	0.5.0
 Release:	2
-Group:		X11/KDE/Applications
-Group(de):	X11/KDE/Applikationen
-Group(pl):	X11/KDE/Aplikacje
 License:	GPL
 Vendor:		Brendon Humphrey <brendy@swipnet.se>
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
+Group(pl):	X11/Aplikacje
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/utils/%{name}-%{version}.tar.gz
 Patch0:		%{name}-%{version}.patch
 URL:		http://www.wantree.com.au/~brendy/sofware.html
@@ -19,6 +23,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Klm is a KDE application that can be used to display and configure the
 hardware health monitoring sensors that are present in most modern
 PCs. Klm uses the lm_sensors kernel module to access these sensors.
+
+%description -l pl
+Klm jest aplikacj± KDE, która mo¿e byæ u¿ywana do wy¶wietlania stanu i
+konfigurowania sensorów monitoruj±cych stan sprzêtu obecnych w
+wiêkszo¶ci wspó³czesnych PC. Klm do komunikacji z sensorami u¿ywa
+modu³ów j±dra lm_sensors.
 
 %prep
 %setup -q
