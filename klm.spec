@@ -25,7 +25,7 @@ modu³ów j±dra lm_sensors.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 
 %build
 if [ -z "$KDEDIR" ]; then
