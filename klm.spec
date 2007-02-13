@@ -1,5 +1,5 @@
 Summary:	KLM - KDE app to monitor system health sensors
-Summary(pl.UTF-8):   KLM - aplikacja KDE do monitorowania sensorów
+Summary(pl.UTF-8):	KLM - aplikacja KDE do monitorowania sensorów
 Name:		klm
 Version:	0.5.0
 Release:	2
