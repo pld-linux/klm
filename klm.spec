@@ -25,7 +25,7 @@ modułów jądra lm_sensors.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 if [ -z "$KDEDIR" ]; then
